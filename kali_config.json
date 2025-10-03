@@ -1,0 +1,72 @@
+{
+  "kali_linux": {
+    "version": "2024.1",
+    "optimized_for": "penetration_testing",
+    "default_user": "kali",
+    "tools_preinstalled": [
+      "nmap", "nikto", "sqlmap", "dirb", "gobuster",
+      "hydra", "john", "hashcat", "metasploit",
+      "burp", "wireshark", "aircrack-ng"
+    ]
+  },
+  "scan": {
+    "default_ports": "21,22,80,443,3389,8080,8443",
+    "full_ports": "1-65535",
+    "web_ports": "80,443,8080,8443,8888,4443,4444,10443",
+    "hidden_ports": "3000-4000,5000-6000,7000-8000,9000-10000",
+    "database_ports": "1433,1434,1521,1830,3306,3351,5432,5984,6379,7199,7474,7473,7687",
+    "scan_threads": 1000,
+    "timeout": 120,
+    "max_pages": 1000,
+    "max_depth": 15,
+    "max_threads": 100
+  },
+  "advanced": {
+    "tor_proxy": "socks5://127.0.0.1:9050",
+    "proxychains": "/usr/bin/proxychains",
+    "user_agents": "/usr/share/seclists/User-Agents/user-agents.txt",
+    "rate_limit_delay": 0.01,
+    "aggressive_scan": true,
+    "stealth_mode": false
+  },
+  "kali_tools": {
+    "metasploit": "/usr/bin/msfconsole",
+    "burpsuite": "/usr/bin/burpsuite",
+    "wireshark": "/usr/bin/wireshark",
+    "aircrack": "/usr/bin/airodump-ng",
+    "nessus": "/usr/bin/nessus",
+    "openvas": "/usr/bin/openvas",
+    "maltego": "/usr/bin/maltego"
+  },
+  "wordlists": {
+    "rockyou": "/usr/share/wordlists/rockyou.txt",
+    "seclists": "/usr/share/seclists",
+    "dirb_common": "/usr/share/wordlists/dirb/common.txt",
+    "dirb_big": "/usr/share/wordlists/dirb/big.txt",
+    "subdomains": "/usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt",
+    "api_endpoints": "/usr/share/seclists/Discovery/Web-Content/api/api-endpoints.txt",
+    "passwords": "/usr/share/seclists/Passwords/Common-Credentials/10-million-combos.txt"
+  },
+  "output": {
+    "reports_dir": "/home/kali/security_reports",
+    "screenshots_dir": "/home/kali/security_reports/screenshots",
+    "logs_dir": "/var/log/security_scanner",
+    "temp_dir": "/tmp/scanner"
+  },
+  "api_keys": {
+    "virustotal": "81fcb279085331b577c95830aacb4baf90b1eb8dc16c890af5ecc1e36ec73398",
+    "shodan": "Y5VLGOqBwOJvHX2oCJrNy5xZq4jerrmr4",
+    "censys": null,
+    "binaryedge": null,
+    "hunter": null,
+    "zoomeye": null
+  },
+  "kali_features": {
+    "wifi_scanning": true,
+    "bluetooth_scanning": true,
+    "gpu_cracking": true,
+    "metasploit_integration": true,
+    "custom_exploits": true,
+    "report_generation": true
+  }
+}

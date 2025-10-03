@@ -1,0 +1,61 @@
+# ==============================================
+# KALI LINUX OPTIMIZED REQUIREMENTS
+# ==============================================
+# Most security tools are pre-installed in Kali Linux
+# Only Python packages not included in Kali are listed here
+
+# Essential Python packages (Kali has most tools pre-installed)
+requests>=2.25.0
+beautifulsoup4>=4.9.0
+lxml>=4.6.0
+selenium>=4.0.0
+python-nmap>=0.7.0
+scapy>=2.4.0
+ipwhois>=1.2.0
+dnspython>=2.1.0
+whois>=0.9.0
+
+# Database connectors
+mysql-connector-python>=8.0.0
+psycopg2-binary>=2.9.0
+pymongo>=4.0.0
+
+# Web frameworks and tools
+flask>=2.0.0
+django>=4.0.0
+
+# Data processing and analysis
+pandas>=1.5.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Machine Learning (if needed)
+torch>=1.12.0
+transformers>=4.20.0
+scikit-learn>=1.1.0
+
+# API clients
+shodan>=1.25.0
+virustotal-python>=1.0.0
+
+# Enhanced CLI and output
+rich>=12.0.0
+click>=8.0.0
+typer>=0.6.0
+
+# Async and performance
+aiohttp>=3.8.0
+httpx>=0.24.0
+uvloop>=0.16.0
+
+# Development and testing
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
+
+# Optional: Additional tools (install only if needed)
+# wappalyzer-python>=1.0.0  # For tech stack detection
+# docker>=6.0.0             # For container scanning
+# kubernetes>=24.0.0        # For K8s scanning
+# yara-python>=4.2.0        # For pattern matching
